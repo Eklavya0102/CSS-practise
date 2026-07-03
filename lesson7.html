@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 7 exercise</title>
+    <!-- <link rel="stylesheet" href="youtube.css"> -->
+    <style>
+        .Thumbnail {
+            width: 300px;
+            height: 300px;
+            border-radius: 180px;
+            object-fit: cover;
+            object-position: left;
+            margin-top: 100px;
+        }
+
+        .searchbox {
+            margin-top: 50px;
+            margin-left: 100px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            border-radius: 5px;
+            border-width: 1px;
+            border-color: rgb(200, 200, 200);
+            border-style: solid;
+            font-size: 16px;
+        }
+
+        .googlesearch{
+            font-size: 16px;
+            width: 500px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border: none;
+            border-radius: 15px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(200, 200, 200);
+            box-shadow: 0px 1px 5px rgb(0, 0, 0, 0.25);
+        }
+
+        .label{
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(100, 100, 100); 
+            margin-bottom: 10px;
+            margin-top: 0px;
+        }
+        .linput{
+            border-radius: 5px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: grey;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 15px;
+            padding-right: 195px;
+        }
+        .claimer{
+            color: rgb(100, 100, 100);
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+            font-size: 15px;
+        }
+        .Linkdin-btn{
+            background-color: rgb(10, 102, 194);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            width: 370px;
+            font-size: 20px;
+        }
+        .Linkdin-btn:hover{
+            /* opacity: 0.8; */
+            box-shadow: 0px 1px 10px rgba(56, 81, 240, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input class="searchbox" type="text" placeholder="Search">
+        </nav>
+    </header>
+    <main>
+        <img class="Thumbnail" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-1.webp" alt="thumb1">
+
+        <input class="googlesearch" type="text" placeholder="Search Google or type a URL">
+
+        <p class="label">Email</p>
+        <input class="linput" type="text">
+
+        <p class="claimer" >By clicking Agree & Join, you agree to the Privacy Policy.</p>
+
+        <button class="Linkdin-btn">
+            Agree & Join
+        </button>
+
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>
