@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Display property inline-block,block</title>
+    <style>
+        .Thumbnail{
+            width: 300px;
+        }
+        .title{
+            font-size: 18px;
+            width: 300px;
+            display: inline-block;
+        }
+        .author{
+            display: block;
+        }
+        .info{
+           display: inline-block;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <img class="Thumbnail" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-1.webp" alt="thumb1">
+    <p class="title">
+        Talking Tech and AI with Google CEO Sundar Pichai!
+    </p>
+    <p class="author">Marques Brownlee</p>
+
+    <p class="info">3.4M views · 6 months ago</p>
+
+
 </body>
+
 </html>
