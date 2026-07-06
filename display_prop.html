@@ -6,30 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display property inline-block,block</title>
     <style>
-        .Thumbnail{
-            width: 301px;
+        .search {
+            display: block;
+            padding-left: 12px;
+            width: 300px;
+            height: 34px;
+            font-size: 16px;
+            border-width: 1px;
+            border-color: grey;
+            border-style: solid;
         }
-        .title{
+
+        .Thumbnail {
+            width: 300px;
+        }
+
+        .title {
             font-size: 18px;
             width: 300px;
         }
-        .author{
+
+        .author {
             display: block;
         }
-        .info{
-           
+
+        .video-preview {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 15px;
         }
     </style>
 </head>
 
 <body>
-    <img class="Thumbnail" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-1.webp" alt="thumb1">
-    <p class="title">
-        Talking Tech and AI with Google CEO Sundar Pichai!
-    </p>
-    <p class="author">Marques Brownlee</p>
+    <input type="text" class="search" placeholder="Search">
 
-    <p class="info">3.4M views · 6 months ago</p>
+    <div class="video-preview">
+        <img class="Thumbnail" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-1.webp" alt="thumb1">
+        <p class="title">
+            Talking Tech and AI with Google CEO Sundar Pichai!
+        </p>
+        <p class="author">Marques Brownlee</p>
+
+        <p class="info">3.4M views · 6 months ago</p>
+    </div>
+
+    <div class="video-preview">
+        <img class="Thumbnail" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-2.webp" alt="thumb2">
+        <p class="title">
+            Try Not To Laugh Challenge #9
+        </p>
+        <p class="author">
+        Markiplier
+        </p>
+        <p class="info">
+            19M views · 4 years ago
+        </p>
+    </div>
 
 
 </body>
