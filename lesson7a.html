@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tweet sample</title>
 
     <style>
-        .profile{
+        .profile {
             width: 45px;
             height: 45px;
             object-fit: cover;
             object-position: left;
             border: none;
             border-radius: 25px;
-            margin-top: 40px;
             margin-left: 20px;
             vertical-align: middle;
         }
-        .text-inp{
+
+        .text-inp {
             border: none;
-            border-radius: 30px;
             font-size: 16px;
             padding-top: 12px;
             padding-bottom: 12px;
             padding-left: 12px;
-            margin-top: 40px;
             margin-left: 5px;
             width: 280px;
             vertical-align: middle;
-            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
         }
 
-        button{
+        button {
             background-color: rgb(29, 155, 240);
             color: white;
             padding-top: 10px;
@@ -41,21 +39,33 @@
             border: none;
             border-radius: 25px;
             vertical-align: middle;
-            margin-top: 40px;
             font-size: 16px;
             font-weight: bold;
         }
 
+        .tw-div {
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 12px;
+            padding-right: 12px;
+            width: 450px;
+            border-radius: 6px;
+        }
     </style>
 </head>
+
 <body>
-    <img class="profile" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-1.webp" alt="profile-picture">
+    <div class="tw-div">
+        <img class="profile" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-1.webp"
+            alt="profile-picture">
 
-    <input class="text-inp" type="text" placeholder="What's happening ?">
+        <input class="text-inp" type="text" placeholder="What's happening ?">
 
-    <button>
-        tweet
-    </button>
-    
+        <button>
+            tweet
+        </button>
+    </div>
 </body>
+
 </html>
