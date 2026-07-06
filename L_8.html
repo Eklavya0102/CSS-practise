@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .name{
+            border-radius: 8px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: grey;
+            width: 140px;
+            padding-left: 15px;
+            height: 40px;
+            font-size: 16px;
+        }
+        .email{
+             display: block;
+             margin-top: 15px;
+             border-width: 1px;
+             border-radius: 8px;
+             border-color: grey;
+             width: 305px;
+             height: 40px;
+             padding-left: 15px;
+             font-size: 16px;
+        }
+        button{
+            background-color: rgb(59, 59, 252);
+            color: white;
+            margin-top: 15px;
+            border: none;
+            border-radius: 8px;
+            height: 48px;
+            width: 322px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover{
+            background-color: orange;
+            color: black;
+
+        }
+        button:active{
+            transform: scale(0.8);
+        }
+        
+    </style>
+</head>
+<body>
+    <input type="text" class="name" placeholder="First name">
+    <input type="text" class="name" placeholder="Last name">
+    <input type="email" class="email" placeholder="Email">
+
+    <button>Sign Up</button>
+    
+</body>
+</html>
