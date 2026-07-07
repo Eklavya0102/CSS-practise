@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practise Flexbox</title>
+    <style>
+        .b12,
+        .a12{
+            height: 80px;
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .c12{
+            height: 40px;
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .d12{
+            height: 50px;
+            border-style: solid;
+            border-color: grey;
+            border-width: 2px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <body>
+        <div class="a12">
+            <div style="background-color: lightblue; width: 200px;">200px</div>
+            <div style="background-color: lightpink; width: 75px;">75px</div>
+        </div>
+
+        <div class="b12">
+            <div style="background-color: lightblue; width: 50px;">50px</div>
+            <div style="background-color: lightpink; flex: 1;">remaining space</div>
+            <div style="background-color: lightblue; width: 75px;">75px</div>
+        </div>
+
+        <div class="c12">
+            <div style="background-color: lightblue; width: 100px;">item 1</div>
+            <div style="background-color: lightpink; width: 100px;">item 2</div>
+            <div style="background-color: lightblue; width: 100px;">item 3</div>
+            <div style="background-color: lightpink; width: 100px;">item 4</div>
+        </div>
+
+        <div class="d12">
+            <div style="background-color: lightblue;"> 
+                item 1
+            </div>
+            <div style="background-color: lightpink;">item 2</div>
+        </div>
+
+    </body>
+</body>
+</html>

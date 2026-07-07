@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>challenge_flexbox</title>
+    <style>
+
+        div{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .e12{
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0px 1px 5px rgba(0,0,0,0.3); 
+            width: 300px;
+        }
+
+        .card{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 7px;
+            padding-right: 12px;
+            padding-left: 12px;
+            padding-bottom: 7px;
+        }
+
+        .notification{
+            background-color: rgb(49, 109, 245);
+            color: white;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="e12">
+        <div class="card">
+            <div>Home</div>
+            <div class="notification">
+                14
+            </div>
+        </div>
+        <div class="card">
+            <div>Notifications</div>
+            <div class="notification">3</div>
+        </div>
+        <div class="card">
+            <div>Messages</div>
+            <div class="notification">9+</div>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
