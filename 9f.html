@@ -11,25 +11,30 @@
             margin-bottom: 0px;
         }
         .img_{
-            width: 170px;
+            width: 100%;
             height: 150px;
             object-fit: cover;
             object-position: left;
         }
 
         .img_1{
-            width: 170px;
+            width: 100%;
             height: 150px;
             object-fit: cover;
             object-position: right;
         }
+
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(6,170px);
+            column-gap: 15px;
+            row-gap: 40px;
+        }
+
         .card{
-            width: 170px;
-            display: inline-block;
-            border-style: solid;
+            width: 100%;
             border: none;
             box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
-            margin-right: 5px;
             transition: transform 0.3s;
         }
         .card:hover{
@@ -59,16 +64,22 @@
             color: grey;
         }
 
-        .pp{
-            display: inline-block;
-            vertical-align: top;
+        .pp-mutual-info-grid{
+            display: grid;
+            grid-template-columns: 25px 1fr;
+            column-gap: 5px;
+            align-items: center;
             margin-left: 5px;
         }
 
-        .mutual{
-            display: inline-block;
+        /* .pp{
+            margin-left: 5px;
+        } */
+
+        /* .mutual{
             vertical-align: top;
-        }
+        } */
+         
         .ch-image{
             width: 25px;
             border-radius: 15px;
@@ -85,20 +96,25 @@
     </style>
 </head>
 <body>
+    <div class="grid">
     <div class="card">
         <div class="thumbnail">
             <img class="img_" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-1.webp" alt="cardimg">
         </div>
-        <div class="more-info">
+        <div>
             <div class="title-row">
                 <p class="Title">hello223</p>
             </div>
-            <div class="pp">
-                <img class="ch-image" src="https://supersimple.dev/exercises/youtube/channel-profile-pics/channel-1.jpeg" alt="">
+
+            <div class="pp-mutual-info-grid">
+                <div class="pp">
+                    <img class="ch-image" src="https://supersimple.dev/exercises/youtube/channel-profile-pics/channel-1.jpeg" alt="">
+                </div>
+                <div>
+                    <p class="info">2 mutual friends</p>
+                </div>
             </div>
-            <div class="mutual">
-                <p class="info">2 mutual friends</p>
-            </div>   
+               
             <div class="btn">
                 <button class="add_friend">
                     Add Friend
@@ -115,12 +131,16 @@
             <div class="title-row">
                 <p class="Title">Sundar.P</p>
             </div>
-            <div class="pp">
+
+            <div class="pp-mutual-info-grid">
+                <div class="pp">
                 <img class="ch-image" src="https://supersimple.dev/exercises/youtube/channel-profile-pics/channel-1.jpeg" alt="">
+                </div>
+                <div class="mutual">
+                    <p class="info">4 mutual friends</p>
+                </div> 
             </div>
-            <div class="mutual">
-                <p class="info">4 mutual friends</p>
-            </div>   
+              
             <div class="btn">
                 <button class="add_friend">
                     Add Friend
@@ -137,18 +157,125 @@
             <div class="title-row">
                 <p class="Title">hello223</p>
             </div>
-            <div class="pp">
+            <div class="pp-mutual-info-grid">
+                <div class="pp">
                 <img class="ch-image" src="https://supersimple.dev/exercises/youtube/channel-profile-pics/channel-1.jpeg" alt="">
+                </div>
+                <div class="mutual">
+                    <p class="info">3 mutual friends</p>
+                </div>
             </div>
-            <div class="mutual">
-                <p class="info">3 mutual friends</p>
-            </div>   
+               
             <div class="btn">
                 <button class="add_friend">
                     Add Friend
                 </button>
             </div>        
         </div>       
+    </div>
+
+    <div class="card">
+        <div class="thumbnail">
+            <img class="img_" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-1.webp" alt="cardimg">
+        </div>
+        <div class="more-info">
+            <div class="title-row">
+                <p class="Title">hello223</p>
+            </div>
+            <div class="pp-mutual-info-grid">
+                <div class="pp">
+                <img class="ch-image" src="https://supersimple.dev/exercises/youtube/channel-profile-pics/channel-1.jpeg" alt="">
+                </div>
+                <div class="mutual">
+                    <p class="info">3 mutual friends</p>
+                </div>
+            </div>
+               
+            <div class="btn">
+                <button class="add_friend">
+                    Add Friend
+                </button>
+            </div>        
+        </div>       
+    </div>
+
+    <div class="card">
+        <div class="thumbnail">
+            <img class="img_" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-1.webp" alt="cardimg">
+        </div>
+        <div class="more-info">
+            <div class="title-row">
+                <p class="Title">hello223</p>
+            </div>
+            <div class="pp-mutual-info-grid">
+                <div class="pp">
+                <img class="ch-image" src="https://supersimple.dev/exercises/youtube/channel-profile-pics/channel-1.jpeg" alt="">
+                </div>
+                <div class="mutual">
+                    <p class="info">3 mutual friends</p>
+                </div>
+            </div>
+               
+            <div class="btn">
+                <button class="add_friend">
+                    Add Friend
+                </button>
+            </div>        
+        </div>       
+    </div>
+
+
+    <div class="card">
+        <div class="thumbnail">
+            <img class="img_" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-1.webp" alt="cardimg">
+        </div>
+        <div class="more-info">
+            <div class="title-row">
+                <p class="Title">hello223</p>
+            </div>
+            <div class="pp-mutual-info-grid">
+                <div class="pp">
+                <img class="ch-image" src="https://supersimple.dev/exercises/youtube/channel-profile-pics/channel-1.jpeg" alt="">
+                </div>
+                <div class="mutual">
+                    <p class="info">3 mutual friends</p>
+                </div>
+            </div>
+               
+            <div class="btn">
+                <button class="add_friend">
+                    Add Friend
+                </button>
+            </div>        
+        </div>       
+    </div>
+
+
+    <div class="card">
+        <div class="thumbnail">
+            <img class="img_" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-1.webp" alt="cardimg">
+        </div>
+        <div class="more-info">
+            <div class="title-row">
+                <p class="Title">hello223</p>
+            </div>
+            <div class="pp-mutual-info-grid">
+                <div class="pp">
+                <img class="ch-image" src="https://supersimple.dev/exercises/youtube/channel-profile-pics/channel-1.jpeg" alt="">
+                </div>
+                <div class="mutual">
+                    <p class="info">3 mutual friends</p>
+                </div>
+            </div>
+               
+            <div class="btn">
+                <button class="add_friend">
+                    Add Friend
+                </button>
+            </div>        
+        </div>       
+    </div>
+
     </div>
 
 
