@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nsted flexbox challenge</title>
+</head>
+<style>
+    body{
+        margin-top: 100px;
+        margin-left: 200px;
+    }
+    .container{
+        height: 110px;
+        width: 400px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+        background-color: rgb(139, 255, 255) ;
+    }
+    p{
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .header{
+        color: grey;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        margin-left: 10px;
+        padding-top: 5px;
+    }
+    .flex{
+        display: flex;
+        flex-direction: row;
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-top: 20px;
+    }
+
+    .image{
+        width: 55px;
+        height: 55px;
+        border-radius: 28px;
+    }
+    .name-time-div{
+        width: 322px;
+        margin-left: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .name{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .time{
+        color: grey;
+    }
+    .sub-cap{
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    .sub{
+        font-size: 14px;
+        font-weight: bold;
+        width: 322px;
+    }
+    .cap{
+        font-size: 14px;
+        color: grey;
+        margin-top: 5px;
+
+    }
+
+
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">
+            ALL INBOXES
+        </div>
+        <div class="flex">
+            <div class="profile-image-div">
+                <img class="image" src="https://scontent.cdninstagram.com/v/t51.82787-19/671245359_17977822625973478_3850360932710841204_n.jpg?_nc_cat=106&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDc5LkMzIn0%3D&_nc_ohc=ucnUMF9E5twQ7kNvwG67eSB&_nc_oc=Ado4iZQTfxtEN4ykbgiL-qnWoZPyhE1npdGLSsG3rlCF6mXOSHEsDQhjGsTLZAvHEBb4jZQmAXt6tBTAbmtlUL59&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=JgFUVMpzYV-EcEQ5gU6QYw&_nc_ss=7b6a8&oh=00_AQCHXAE49wj2uqKwRa7ihe8J2jta9BZlw6aBC8ekfWY3ew&oe=6A545270" alt="profile_image">
+            </div>
+            <div class="more-info-div">
+                <div class="name-time-div">
+                    <p class="name">Eklavya.C</p>
+                    <p class="time">4:30 am</p>
+                </div>
+                <div class="sub-cap">
+                    <p class="sub">Biggest sales of the year !</p>
+                    <p class="cap">Hey there! We're writing to tell you about our...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
