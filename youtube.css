@@ -1,21 +1,187 @@
-.Thumbnail{
-    width: 300px;
-    height: 300px;
-    border-radius: 180px;
-    object-fit: cover;
-    object-position: left;
-    margin-top: 100px;
 
-}
+        /* general CSS */
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
 
-.searchbox{
-    margin-top: 50px;
-    margin-left: 100px;
-    width: 300px;
-    height: 35px;
-    border-radius: 5px;
-    border-width: 1px;
-    border-color: rgb(100, 100, 100);
-    border-style: solid;
-    font-size: 16px;
-}
+        body{
+            margin: 0px;
+        }
+
+        /* Header Style */
+        .header{
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; 
+
+            border: none;
+            box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+            margin-bottom: 15px;
+        }
+
+        .left-section{
+            display: flex;
+            align-items: center;
+        }
+        .hamburger{
+            height: 23px;
+            margin-left: 20px;
+            margin-right: 10px;
+        }
+        .youtube-logo{
+            height: 23px;
+            width: 90px;
+            margin-left: 10px;
+        }
+
+        .middle-section{
+            margin-left: 75px;
+            margin-right: 34px;
+            max-width: 500px;
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        .search {
+            flex:1;
+            /* width 0 enables the box to shrink */
+            width: 0px;
+            padding-left: 12px;
+            height: 34px;
+            font-size: 16px;
+            border-width: 1px;
+            border-color: rgb(175, 175, 175);
+            border-style: solid;
+            border-radius: 3px;
+            box-shadow: inset 0px 0.3px 1px rgba(0,0,0.06);
+        }
+
+        .magnifier-button{
+            width: 65px;
+            height: 38px;
+            border: solid;
+            border-width: 1px;
+            border-color: rgb(175, 175, 175);
+            margin-left: -4px;
+        }
+        .magnifier-image{
+            margin-top: 5px;
+            height: 24px;
+            object-position: center;
+        }
+
+        .voice-search{
+            height: 38px;
+            width: 38px;
+            border-radius: 18.5px;
+            margin-left: 10px;
+            border: none;
+        }
+        .voice-search-image{
+            height: 24px;
+            margin-top: 3px;
+        }
+    
+        .right-section{
+            width: 200px;
+            margin-right: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* flex-shrink 0 doesnt enable the section to shrink */
+            flex-shrink: 0;
+        }
+
+        .upload-image{
+            height: 30px;
+        }
+
+        .app-image{
+            height: 28px;
+        }
+
+        .notification-image{
+            height: 28px;
+        }
+
+        .user-image{
+            height: 40px;
+        }
+
+
+
+     
+        /* Video Styles */
+
+        .Thumbnail {
+            /* width: 300px;   this was before applying css grid ,  */
+
+            /* making 100% width makes the image take the 100% of the container which we made through grid 1fr */
+            width: 100%;
+        }
+
+        .title {
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 0px;
+            line-height: 20px;
+            margin-bottom: 12px;
+        }
+
+        .author,
+        .info {
+            font-size: 12px;
+            color: rgb(96, 96, 96);
+        }
+
+        .author{
+            margin-bottom: 5px;
+        }
+
+
+        /* CSS Grid making colums takes over this */
+
+        /* .video-preview {
+            display: inline-block;
+            width: 300px;
+            margin-right: 15px;
+            vertical-align: top;
+        } */
+
+        .video-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 18px;
+            row-gap: 36px;
+        }
+
+        .video-info-grid{
+            display: grid;
+            grid-template-columns: 50px 1fr;
+        }
+
+        /* Grid does the belw work */ 
+        /* .channel-picture-frame { 
+        display: inline-block; 
+        width: 50px; 
+        vertical-align: top;  } */
+        
+        /* 
+        .video-info { 
+        display: inline-block; 
+        width: 250px; 
+        } 
+        */
+
+        .channel-pp {
+            width: 40px;
+            border-radius: 20px;
+        }
+
+        .thumbnail-row {
+            margin-bottom: 12px;
+        }
