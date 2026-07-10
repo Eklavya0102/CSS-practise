@@ -10,8 +10,9 @@
             margin: 0px;
             height: 2000px;
             padding-top: 80px;
-            padding-left: 85px;
-            padding-right: 20px;
+            padding-left: 98px;
+            padding-right: 23px;
+            background-color: rgb(249, 245, 245);
         }
 
         /* Header Style */
@@ -37,13 +38,40 @@
 
         /* sidebar */
         .sidebar{
-            background-color: lightsteelblue;
+            background-color: white;
             position: fixed;
             left: 0px;
-            top: 60px;
+            top: 56px;
             bottom: 0px;
-            width: 65px;
+            width: 75px;
+            z-index: 200;
+            padding-top: 4px;
         }
+        .sidebar-link{
+            height: 75px;
+            /* for centering the objects */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .sidebar-link:hover{
+            background-color: rgb(240, 232, 232);
+            cursor: pointer;
+        }
+
+        .sidebar-link img{
+            height: 24px;
+            margin-bottom: 5px;
+        }
+
+        .sidebar-link div{
+            font-size: 11px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+       
 
         .left-section{
             display: flex;
@@ -154,6 +182,49 @@
 
         .user-image{
             height: 40px;
+        }
+
+        .magnifier-button, 
+        .voice-search,
+        .notification-container,
+        .upload-icon,
+        .apps{
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .magnifier-button .tooltip,
+        .voice-search .tooltip,
+        .notification-container .tooltip,
+        .upload-icon .tooltip,
+        .apps .tooltip
+        {
+            background-color: rgb(166, 161, 161);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            font-weight: 400px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 4px;
+            padding-right: 4px;
+
+            position: absolute;
+            bottom: -34px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+            white-space: nowrap;
+        }
+
+        .magnifier-button:hover .tooltip,
+        .voice-search:hover .tooltip,
+        .notification-container:hover .tooltip,
+        .upload-icon:hover .tooltip,
+        .apps:hover .tooltip
+        {
+            opacity: 1;
         }
 
 
