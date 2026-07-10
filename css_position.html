@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_position</title>
+    <style>
+        body{
+            height: 3000px;
+            /* padding on the body as to maintain equal spacing nall the elements */
+            padding-top: 60px;
+            padding-left: 80px;
+        }
+        .header{
+            background-color: black;
+            color: white;
+            height: 40px;
+            position: fixed;
+            /* specifies where the element is from the top of the browser, using these to automatically resize the element according to the browser size */
+            top: 0px;
+            left: 0px;
+            right: 0px;
+        }
+        .sidebar{
+            background-color: yellow;
+            color: black;
+
+            position: fixed;
+            left: 0px;
+            top: 40px;
+            bottom: 0px;
+            width: 70px;
+        }
+        .div1{
+            background-color: lightblue;
+            height: 200px;
+            width: 200px;
+            position: static;
+        }
+        .div2{
+            background-color: lightpink;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">header</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="div1">div 1</div>
+    <div class="div2"> div 2</div>
+</body>
+</html>
